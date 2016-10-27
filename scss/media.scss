@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+  .col-3 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .col-3 {
+    width: 100%;
+  }
+  h1{
+    font-size: 2em;
+  }
+}
+
+
+
+
+/* css3 animate */
+@keyframes text{
+  0%{transform:rotateX(-10deg) rotateY(-20deg);}
+  100%{transform:rotateX(10deg) rotateY(20deg);}
+}
