@@ -1,0 +1,112 @@
+/* var */
+$white: #fff;
+$gray: #ccc;
+$text-gray: #999;
+$base: #1fa67a;
+$bg: #f8f8f8;
+
+@mixin border-top() {
+  border-top: 1px solid #dbdbdb;
+}
+
+/* reset */
+html, body, div, img,header,section,ul,ol,li {
+  padding: 0;
+  margin: 0;
+  font-family:'microsolf yahei';
+}
+h1 {
+  font-size:4em;
+  font-family:'microsolf yahei';
+  font-weight:200;
+  animation:text 4s infinite alternate ease-in-out;
+}
+a{
+  text-decoration: none;
+}
+/* page style */
+.container {
+  .row:first-child {
+    border-top: 0;
+  }
+}
+
+.list-item {
+  box-sizing: border-box;
+  > div {
+    top: 50%;
+    left: 50%;
+    position: relative;
+  }
+}
+.text-center{
+  text-align: center;
+}
+.location-icon{
+  margin-right:5px;
+}
+.shapes-top{
+  display:block;
+  height:320px;
+  background: $base url("../images/crissxcross.png");
+  overflow: hidden;
+  color:$white;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.useful-links {
+  padding: 8px 0;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  ul{
+    list-style:none;
+    li{
+      display: inline-block;
+      padding:0 15px;
+      line-height: 30px;
+      &:hover{
+        background: $white;
+      }
+    }
+  }
+  a{
+    color: $text-gray;
+    font-size: 14px;
+  }
+}
+.shapes-footer{
+  display:block;
+  height:220px;
+  width:100%;
+  background: $base url("../images/crissxcross.png");
+  overflow: hidden;
+  color: $white;
+  .btn{
+    margin-top:60px;
+    margin-bottom:20px;
+    display: inline-block;
+    padding:10px 12px;
+    background: transparent;
+    border:2px solid $white;
+    border-radius: 5px;
+    min-width:120px;
+    color: $white;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+  }
+}
+.test{
+  height:100%;
+}
+/* break your brain */
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/grid";
+
+@import "shapes";
+@import "create";
+@import "impress";
+@import "media";
